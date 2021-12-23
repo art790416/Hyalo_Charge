@@ -1,0 +1,235 @@
+body {
+    margin: 0;
+}
+
+.sec_01 {
+    background-image: url(./images/full_bg_01.jpg);
+    background-size: 1920px;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.sec_02 {
+    background-image: url(./images/full_bg_02.jpg);
+    background-size: 1920px;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.sec_03 {
+    background-image: url(./images/full_bg_03.jpg);
+    background-size: 1920px;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.sec_04 {
+    background-image: url(./images/full_bg_04.jpg);
+    background-size: 1920px;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.sec_05 {
+    background-image: url(./images/full_bg_05.jpg);
+    background-size: 1920px;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.sec_06 {
+    background-image: url(./images/full_bg_06.jpg);
+    background-size: 1920px;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.sec_07 {
+    background-image: url(./images/full_bg_07.jpg);
+    background-size: 1920px;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.sec_08 {
+    background-image: url(./images/full_bg_08.jpg);
+    background-size: 1920px;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.bg {
+    background-size: 1920px;
+}
+
+
+/* 閃光特效 */
+
+.inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    line-height: 0;
+    position: relative;
+}
+
+img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.banner-mask {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.img .btn_01 {
+    display: block;
+    position: absolute;
+    /* ↓閃光在一範圍內跑的寬與高↓ */
+    width: 100%;
+    height: 100%;
+    /* ↑閃光在一範圍內跑的寬與高↑ */
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+}
+
+.img .btn_01:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -1700px;
+    /* ↓調整閃光上下位置↓ */
+    top: -7.3%;
+    /* ↑調整閃光上下位置↑ */
+    /* ↓閃光本身的寬與高↓ */
+    width: 132.5%;
+    height: 100%;
+    /* ↑閃光本身的寬與高↑ */
+    background: url(./images/light.png) no-repeat center;
+    background-size: 100%;
+    animation: btn 3.5s infinite ease-in-out;
+    /* ↓調整閃光透明度↓ */
+    opacity: 0.8;
+    /* ↑調整閃光透明度↑ */
+}
+
+.img .btn_02 {
+    display: block;
+    position: absolute;
+    /* ↓閃光在一範圍內跑的寬與高↓ */
+    width: 100%;
+    height: 100%;
+    /* ↑閃光在一範圍內跑的寬與高↑ */
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+}
+
+.img .btn_02:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -1700px;
+    /* ↓調整閃光上下位置↓ */
+    top: 1.8%;
+    /* ↑調整閃光上下位置↑ */
+    /* ↓閃光本身的寬與高↓ */
+    width: 147%;
+    height: 100%;
+    /* ↑閃光本身的寬與高↑ */
+    background: url(./images/light.png) no-repeat center;
+    background-size: 100%;
+    animation: btn 3.5s infinite ease-in-out;
+    /* ↓調整閃光透明度↓ */
+    opacity: 0.8;
+    /* ↑調整閃光透明度↑ */
+}
+
+.img .btn_03 {
+    display: block;
+    position: absolute;
+    /* ↓閃光在一範圍內跑的寬與高↓ */
+    width: 100%;
+    height: 100%;
+    /* ↑閃光在一範圍內跑的寬與高↑ */
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+}
+
+.img .btn_03:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -1700px;
+    /* ↓調整閃光上下位置↓ */
+    top: -1%;
+    /* ↑調整閃光上下位置↑ */
+    /* ↓閃光本身的寬與高↓ */
+    width: 147%;
+    height: 100%;
+    /* ↑閃光本身的寬與高↑ */
+    background: url(./images/light.png) no-repeat center;
+    background-size: 100%;
+    animation: btn 3.5s infinite ease-in-out;
+    /* ↓調整閃光透明度↓ */
+    opacity: 0.8;
+    /* ↑調整閃光透明度↑ */
+}
+
+@keyframes btn {
+    0% {
+        left: -300%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+@-webkit-keyframes btn {
+    0% {
+        left: -300%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+
+/* 閃光特效結束 */
+
+.logo_abs {
+    display: block;
+    position: absolute;
+    width: 76.5%;
+    top: 2.2%;
+    left: 0.5%;
+}
+
+.point_abs {
+    display: block;
+    position: absolute;
+    width: 21.5%;
+    top: 15.3%;
+    right: 3.2%;
+}
+
+
+/* This only changes this particular animation duration */
+
+.animate__bounce {
+    --animate-duration: 1.5s;
+}
+
+.animate__pulse {
+    --animate-duration: 1.5s;
+}
